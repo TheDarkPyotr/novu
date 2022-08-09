@@ -7,6 +7,8 @@ import { SP } from './languages/sp';
 import { FA } from './languages/fa';
 import { AR } from './languages/ar';
 import { GJ } from './languages/gj';
+import { IT } from './languages/it';
+
 
 export interface ITranslationContent {
   readonly notifications: string;
@@ -28,7 +30,8 @@ export const TRANSLATIONS: Record<I18NLanguage, ITranslationEntry> = {
   fr: FR
   gj: GJ,
   ru: RU,
-  sp: SP
+  sp: SP,
+  it: IT
 };
 
 /**
@@ -39,4 +42,4 @@ export const TRANSLATIONS: Record<I18NLanguage, ITranslationEntry> = {
  * - For English use "en"
  * - For French use "fr"
  */
-export type I18NLanguage = 'en' | 'fi' | 'hi' | 'gj' | 'ru' | 'sp' | 'ar' | 'fa' | 'fr';
+export type I18NLanguage = 'en' | 'fi' | 'hi' | 'gj' | 'ru' | 'sp' | 'ar' | 'fa' | 'fr' | 'it';
